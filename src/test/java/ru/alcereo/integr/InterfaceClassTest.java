@@ -52,16 +52,4 @@ public class InterfaceClassTest {
                 testString
         );
     }
-
-    @Test
-    public void make2TestRequest(){
-        when(dataKeeper.getData()).thenReturn("OK");
-
-        String testString = interServ.getTestString();
-
-        assertEquals(
-                "OK",
-                testString
-        );
-    }
 }
